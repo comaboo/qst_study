@@ -3,8 +3,8 @@ package com.exam;
 import java.util.Scanner;
 
 public class FenJie {
-	
-	//找出最小质因数
+        //鍒嗘敮淇敼娴嬭瘯
+	//鎵惧嚭鏈�灏忚川鍥犳暟
 	public static int findYS(int i) {
 		int j;
 		for(j=2;j<=i;j++) {
@@ -16,11 +16,11 @@ public class FenJie {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("请输入一个整数：");
+		System.out.println("璇疯緭鍏ヤ竴涓暣鏁帮細");
 		Scanner sc=new Scanner(System.in);
 		int num=sc.nextInt();
 		int k=findYS(num);
-		//判断是否质因数是本身，不是则迭代找出最小质因数
+		//鍒ゆ柇鏄惁璐ㄥ洜鏁版槸鏈韩锛屼笉鏄垯杩唬鎵惧嚭鏈�灏忚川鍥犳暟
 		if(k==num) {
 			System.out.println(num+"="+"1*"+k);
 		}else {
